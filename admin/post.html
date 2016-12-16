@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>管理頁面</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<section id="sidebar"> 
+  <div class="white-label">
+  </div> 
+  <div id="sidebar-nav">   
+    <ul>
+      <li class="active"><a href="post.html"></i>貼文管理</a></li>
+      <li><a href="classManager.html"></i>班級管理</a></li>
+      <li><a href="students.html">學生管理</a></li>
+      <li><a href="chat.html">信箱</a></li>     
+    </ul>
+  </div>
+</section>
+<section id="content">
+<div id="newPostModal" class="newPostModal">
+     <!-- Modal content -->
+      <div class="newPostModal-content">
+         <span class="close">x</span>
+           <a id="btn-back" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"> 返回</span></a>
+
+          <form action="post.html">
+           <div class="form-group">
+             <label for="title">選擇分類</label>
+               <select id="category" class="form-control">
+                <option>最新消息</option>
+                <option>國三數學班</option>
+                <option>國一理化班</option>
+                <option>國二國文班</option>
+                <option>國一數學班</option>
+              </select>
+           </div>
+
+          <div class="form-group">
+           <label for="title">標題</label>
+             <input type="text" class="form-control" id="title">
+          </div>
+
+          <div class="form-group">
+           <label for="content">內容</label>
+           <textarea class="form-control" rows="10"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="image">選擇圖片</label>
+            <input type="file" id="image">
+          </div>
+
+          <div class="form-group">
+           <label for="Name">發佈人</label>
+           <input type="text" class="form-control" id="name" >
+          </div>
+
+          <div class="form-group">
+           <label for="date">日期</label>
+           <input type="email" class="form-control" id="date" placeholder="2099/12/31">
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">是否傳送推撥通知
+            </label>
+          </div>
+         <a id="btn_submit" type="submit" class="btn btn-primary">發佈文章</a>
+        </form>
+      </div>
+    </div>
+  <div class="content">
+    <div class="container">
+
+     <a id="btn-new" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"> 新增文章</span></a>
+     <!-- The Modal -->
+
+      <h1>文章列表</h1>
+      <ul class="list">
+     <!--  if u want to delete item , use <span class="delete"><i class="fa fa-trash"></i></span> -->
+        <li class="articleItem"><span class="modify"><i class="fa fa-pencil-square-o"></i></span> 國一數學班熱烈招生中</li>
+        <li class="articleItem"><span class="modify"><i class="fa fa-pencil-square-o"></i></span> 聖誕節交換禮物活動開始報名</li>
+        <li class="articleItem"><span class="modify"><i class="fa fa-pencil-square-o"></i></span> 明年元旦放假一天,補課時間另行通知</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="post.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

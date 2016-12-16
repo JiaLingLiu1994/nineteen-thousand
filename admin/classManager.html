@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>管理頁面</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="classManager.css">
+   
+    <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<section id="sidebar"> 
+  <div class="white-label">
+  </div> 
+  <div id="sidebar-nav">   
+    <ul>
+      <li><a href="post.html"></i>貼文管理</a></li>
+      <li class="active"><a href="classManager.html"></i>班級管理</a></li>
+      <li><a href="students.html">學生管理</a></li>
+      <li><a href="chat.html">信箱</a></li>     
+    </ul>
+  </div>
+</section>
+<section id="content">
+
+  <div class="content">
+      
+<div class="container demo">
+
+	
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						國一數學班
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				123
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						國二數學班
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				國二數學班
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						國三數學班
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				國三數學班
+			</div>
+		</div>
+
+	</div><!-- panel-group -->
+	
+	
+</div><!-- container -->
+
+  </div>
+</section>
+<script type="text/javascript" src="classManager.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>管理頁面</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="students.css">
+    <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<section id="sidebar"> 
+  <div class="white-label">
+  </div> 
+  <div id="sidebar-nav">   
+    <ul>
+      <li><a href="post.html"></i>貼文管理</a></li>
+      <li><a href="classManager.html"></i>班級管理</a></li>
+      <li class="active"><a href="students.html">學生管理</a></li>
+      <li><a href="chat.html">信箱</a></li>     
+    </ul>
+  </div>
+</section>
+<section id="content">
+  <div class="content">
+    <div class="container">
+        <div class="container col-md-4" id="panel1">
+  <div class="col-md-8 form-group pull-left">
+    <form class="navbar-form" role="search">
+      <div class="form-group input-group col-md-12">
+        <input type="text" class="form-control" placeholder="Search users" name="q" autofocus>
+        <div class="input-group-btn">
+          <button class="btn btn-default btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <div class="col-md-3 pull-left">
+    <button type="submit" class="btn btn-primary" id="new">新增</button>
+  </div>
+  
+  <div class="form-group col-md-12" >
+    
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr class="dropup">
+          <!--<th><input type="checkbox" unchecked></th>-->
+          <th >學生姓名</th>
+          <th>電話</th>
+          <th >父親姓名</th>
+          <th >電話</th>
+          <th >母親姓名</th>
+          <th >電話</th>
+          <th >班級</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!--<td><input type="checkbox" unchecked></td>-->
+          <td>王曉明</td>
+          <td>0912345678</td>
+          <td>王大明</td>
+          <td>0998765432</td>
+          <td>王明明</td>
+          <td>0921333333</td>
+          <td>國一數學班</td>
+          <td><button id="modify" type="button" class="btn btn-warning">修改</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<div class="container col-md-4" id="panel2">
+  
+<form role="form" action="students.html">
+  <div class="form-group col-md-6">
+    <label for="student_name">學生姓名</label>
+    <input id="student_name" type="text" class="form-control"  placeholder="學生姓名" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="student_phone">電話</label>
+    <input id="student_phone" type="text" class="form-control"  placeholder="電話">
+  </div>
+  
+  <div class="form-group col-md-6">
+    <label for="fa_name">父親姓名</label>
+    <input type="text" class="form-control"  placeholder="父親姓名" >
+  </div>
+  <div class="form-group col-md-6">
+    <label for="fa_phone">電話</label>
+    <input type="text" class="form-control" placeholder="電話" >
+  </div>
+  
+  <div class="form-group col-md-6">
+    <label for="ma_name">母親姓名</label>
+    <input type="text" class="form-control" placeholder="母親姓名" >
+  </div>
+  <div class="form-group col-md-6">
+    <label for="ma_phone">電話</label>
+    <input type="text" class="form-control" placeholder="電話" >
+  </div>
+  
+  <div class="form-group col-md-12">
+    <label for="home_phone">家用電話</label>
+    <input type="text" class="form-control" placeholder="06-2113212" >
+  </div>
+  
+  <div class="form-group col-md-12">
+    <label for="isr">上課班級</label>
+    <select id="osr" class="form-control dropdown">
+      <option disabled="disabled" selected="selected">請選擇</option>
+      <option>國一數學班</option>
+      <option>國二數學班</option>
+      <option>國三數學班</option>
+      <option>高一數學班</option>
+      <option>高二數學班</option>
+      <option>高三數學班</option>
+    </select>
+  </div>
+  
+  
+  <div class="col-md-12 text-right">
+    <button id="newStudent" type="submit" class="btn btn-primary">確定</button>
+    <button type="button" class="btn btn-default" id="backTostudents">取消</button>
+    <!--<button type="submit" class="btn btn-danger pull-right">Delete Account</button>-->
+  </div>
+
+</form>
+  
+</div>
+
+<div class="container col-md-4" id="panel3">
+
+<form role="form">
+  
+ <div class="form-group col-md-6">
+    <label for="student_name">學生姓名</label>
+    <input type="text" class="form-control" name="student_name" placeholder="學生姓名" required>
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="student_phone">電話</label>
+    <input type="text" class="form-control" name="student_phone" placeholder="電話">
+  </div>
+  
+  <div class="form-group col-md-6">
+    <label for="fa_name">父親姓名</label>
+    <input type="text" class="form-control" name="fa_name" placeholder="父親姓名" >
+  </div>
+  <div class="form-group col-md-6">
+    <label for="fa_phone">電話</label>
+    <input type="text" class="form-control" name="fa_phone" placeholder="電話" >
+  </div>
+  
+  <div class="form-group col-md-6">
+    <label for="ma_name">母親姓名</label>
+    <input type="text" class="form-control" name="ma_name" placeholder="母親姓名" >
+  </div>
+  <div class="form-group col-md-6">
+    <label for="ma_phone">電話</label>
+    <input type="text" class="form-control" name="ma_phone" placeholder="電話" >
+  </div>
+  
+  <div class="form-group col-md-12">
+    <label for="home_phone">家用電話</label>
+    <input type="text" class="form-control" name="home_phone" placeholder="06-2113212" >
+  </div>
+  
+  <div class="form-group col-md-12">
+    <label for="isr">上課班級</label>
+    <select id="osr" class="form-control dropdown">
+      <option disabled="disabled" selected="selected">請選擇</option>
+      <option>國一數學班</option>
+      <option>國二數學班</option>
+      <option>國三數學班</option>
+      <option>高一數學班</option>
+      <option>高二數學班</option>
+      <option>高三數學班</option>
+    </select>
+  </div>
+  
+  
+  <div class="col-md-12 text-right">
+    <button type="submit" class="btn btn-danger pull-left">刪除</button>
+    <button type="submit" class="btn btn-primary">更新</button>
+    <button id="modifyToStudents" type="button" class="btn btn-default">取消</button>
+    
+  </div>
+
+</form>
+  
+</div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="students.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
