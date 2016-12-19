@@ -572,7 +572,8 @@ html, body {
 
 .content .messages ul li.replies img {
     margin: 6px 0 0 0px;
-    margin-left: 5.5%;
+    /*margin-left: 5.5%;*/
+    margin-left: -35px;
 }
 
 .content .messages ul li.replies p {
@@ -655,6 +656,12 @@ html, body {
 }
 
 @media screen and (max-width: 479px) and (min-width: 320px) {
+
+    .navmenu {
+        z-index: 200;
+        position: relative;
+        background-color: #f5f5f5;
+    }
 
     #sidepanel {
         width: 350%;
@@ -792,6 +799,12 @@ html, body {
 
 @media screen and (max-width: 659px) and (min-width: 480px) {
 
+    .navmenu {
+        z-index: 200;
+        position: relative;
+        background-color: #f5f5f5;
+    }
+
     #sidepanel {
         width: 58px;
         min-width: 58px;
@@ -848,7 +861,8 @@ html, body {
 
 
     .content .messages ul li.replies img {
-        display: none;
+        /*display: none;*/
+        visibility: hidden;
     }
 
     .content .messages ul li.sent img {
@@ -857,6 +871,7 @@ html, body {
 
     .content .messages ul li p {
         max-width: 300px;
+        margin-left: -40px;
     }
 
     .content .message-input .wrap input {
@@ -877,16 +892,24 @@ html, body {
 
     .content .messages ul li.replies img {
         margin: 6px 0 0 0px;
-        margin-left: 3%;
+        /*margin-left: 3%;*/
+        margin-left: -35px;
     }
 
 }
 
 @media screen and (max-width: 767px) and (min-width: 660px) {
 
+    .navmenu {
+        z-index: 200;
+        position: relative;
+        background-color: #f5f5f5;
+    }
+
     .content .messages ul li.replies img {
         margin: 6px 0 0 0px;
-        margin-left: 3%;
+        /*margin-left: 3%;*/
+        margin-left: -35px;
     }
 
 }
