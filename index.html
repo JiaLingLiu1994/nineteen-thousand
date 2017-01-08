@@ -5,9 +5,11 @@
 	<title>補習班</title>
 	<meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="modal.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Oswald' rel='stylesheet' type='text/css'>
-
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="modal.js"></script> -->
 </head>
 
 <body>
@@ -45,10 +47,11 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<main class="content">
 <div id="postIndex" class="widthWrapper">
 
     <article>
-      <a target="_blank" >
+      <a href="#modalA" class="modal-open">
         <div class="postImg">
           <img src="http://sitechop.com/images/demos/speed-website.png" />
         </div>
@@ -58,7 +61,7 @@
     </article>
 
     <article>
-      <a target="_blank" >
+      <a href="#modalA" class="modal-open">
         <div class="postImg">
           <img src="http://sitechop.com/images/demos/gruntjs-basics.png" />
         </div>
@@ -68,7 +71,7 @@
     </article>
 
     <article>
-      <a target="_blank" >
+      <a href="#modalA" class="modal-open">
         <div class="postImg">
           <img src="http://sitechop.com/images/demos/svg-sprite-social-icons.png" />
         </div>
@@ -78,7 +81,7 @@
     </article>
 
     <article>
-      <a target="_blank">
+      <a href="#modalA" class="modal-open">
         <div class="postImg">
           <img src="http://sitechop.com/images/demos/icon-buttons.png" />
         </div>
@@ -88,7 +91,7 @@
     </article>
 
     <article>
-      <a target="_blank" >
+      <a href="#modalA" class="modal-open">
         <div class="postImg">
           <img src="http://sitechop.com/images/demos/ubuntu-migration.png" />
         </div>
@@ -97,11 +100,20 @@
       </a>
     </article>
 
+    <section class="modal bg--lightgray" role="dialog" id="modalA" aria-labelledby="modalA-title" aria-describedby="modalA-description">
+	<a href="#" class="modal-exit" title="close">&times;</a>
+	<h1 id="modalA-title" class="modal-title">聖誕節活動</h1>
+	<p id="modalA-description" class="modal-description">新北市政府觀光旅遊局新聞稿2016.11.22016新北市歡樂耶誕城金氏世界紀錄團隊精心打造「全國面積最大3D光雕投影」+「3D立體光雕耶誕樹」點亮新北歡慶耶誕45天...</p>
+	</section>
+
+	</main>
+
 </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.0/velocity.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/4d5ece1593.js"></script>
+
 
 </body>
 

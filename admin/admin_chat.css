@@ -29,6 +29,7 @@
 
 #sidepanel #search input {
     padding: 10px 0 10px 46px;
+    font-size: 17px;
     width: 100%;
     border: none;
     background: #ccc;
@@ -81,12 +82,14 @@
 #sidepanel #contacts ul li.contact {
     position: relative;
     padding: 10px 0 15px 0;
-    font-size: 0.9em;
+    font-size: 15px;
     cursor: pointer;
     list-style-type: none;
+    font-weight: normal;
 }
 
 #sidepanel #contacts ul li.contact p {
+    margin-top: -3px;
     color: #7F8E8D;
     font-weight: normal;
 }
@@ -98,11 +101,13 @@
 #sidepanel #contacts ul li.contact.active {
     background: #eee;
     border-left: 5px solid #435f7a;
+    font-weight: bolder;
 }
 
 #sidepanel #contacts ul li.contact.active p {
   font-weight: bold;
   color: #000;
+  font-weight: bold;
 }
 
 #sidepanel #contacts ul li.contact .wrap {
@@ -110,6 +115,8 @@
     margin: 0 auto;
     position: relative;
 }
+
+
 
 /*#frame #sidepanel #contacts ul li.contact .wrap span {
     position: absolute;
@@ -132,10 +139,19 @@
 }*/
 
 #sidepanel #contacts ul li.contact .wrap img {
-    width: 40px;
+    width: 45px;
     border-radius: 50%;
     float: left;
     margin-right: 10px;
+    margin-top: 5px;
+}
+
+#sidepanel #contacts ul li.contact.active img {
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+    margin-left: -5px;
+    margin-top: 5px;
 }
 
 #sidepanel #contacts ul li.contact .wrap .meta {
@@ -243,6 +259,7 @@
     margin-top: -10px;
     padding-left: 10px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .content .messages {
@@ -279,7 +296,7 @@
 
 .content .messages ul li.sent img {
     float: right;
-    margin: 6px 8px 0 0;
+    margin: 1px 8px 0 0;
 }
 
 .content .messages ul li.sent p {
@@ -287,10 +304,11 @@
     background: #435f7a;
     color: #f5f5f5;
     margin-right: 9px;
+    font-size: 17px;
 }
 
 .content .messages ul li.replies img {
-    margin: 6px 0 0 0px;
+    margin: 1px 0 0 0px;
     /*margin-left: 5.5%;*/
     margin-left: 0px;
 }
@@ -298,6 +316,7 @@
 .content .messages ul li.replies p {
     background: #f5f5f5;
     margin-left: 9px;
+    font-size: 17px;
 }
 
 .content .messages ul li img {
@@ -310,7 +329,7 @@
     display: inline-block;
     padding: 10px 15px;
     border-radius: 20px;
-    max-width: 205px;
+    max-width: 300px;
     line-height: 130%;
 }
 
@@ -328,12 +347,12 @@
 }
 
 .content .message-input .wrap input {
-    font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+    /*font-family: "proxima-nova",  "Source Sans Pro", sans-serif;*/
     float: left;
     border: none;
     width: calc(100% - 90px);
-    padding: 11px 32px 10px 8px;
-    font-size: 0.8em;
+    padding: 5px 32px 10px 8px;
+    font-size: 17px;
     color: #32465a;
 }
 

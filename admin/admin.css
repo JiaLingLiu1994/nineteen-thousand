@@ -1,5 +1,9 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'cwTeXYen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
   height: 100%;
   overflow-y: hidden;
   background-color: #fff;
@@ -34,7 +38,7 @@ a {
 
 #sidebar ul li a {
   color: #C2C2C2;
-  font-size: .95em;
+  font-size: 17px;
   padding: 15px 20px;
   float: left;
   width: 100%;

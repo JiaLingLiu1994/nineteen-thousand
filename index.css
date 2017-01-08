@@ -43,6 +43,7 @@ article a:hover {
   background: #eee;
   border-top: #666 solid .25em;
   padding: 2.374em 2.5em 2.5em 2.5em;
+  cursor: pointer;
 }
 
 .postImg {
