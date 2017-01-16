@@ -17,6 +17,16 @@ body {
   line-height: 1.2;
 }*/
 
+#logo {
+  margin-top: -12px;
+  width: 44.145px;
+  height: 42.525px;
+}
+
+#name {
+  margin-left: -25px;
+}
+
 .widthWrapper {
   max-width: 750px;
   margin: 0 auto;
